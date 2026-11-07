@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture & Urban Planning</title>
+
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #fff;
+            letter-spacing: 4px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px 50px;
+        }
+
+        /* Card styling with 3D hover and fade-in animation */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 50px;
+            padding: 30px 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform-style: preserve-3d;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03) rotateX(1deg);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            color: #2c3e50;
+            border-left: 6px solid #1abc9c;
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Staggered animation delays */
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+        .card:nth-child(4) { animation-delay: 0.8s; }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px){
+            h1 {
+                font-size: 2.5rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            .card {
+                padding: 25px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>ARCHITECTURE & URBAN PLANNING OF CHANDIGARH</h1>
+
+    <div class="content">
+
+        <div class="card">
+            <h3>Sector-based City Design</h3>
+            <p>
+                Chandigarh is famous for its sector-based city planning, a core element of Le Corbusier’s vision.
+                The city is divided into well-defined rectangular sectors, each designed as a self-sufficient
+                neighborhood. Every sector includes residential areas, markets, schools, parks, and community
+                facilities, ensuring convenience for daily life. Wide roads and green belts separate traffic
+                and residential spaces, reducing congestion and enhancing livability. This systematic and
+                modular design makes Chandigarh organized, easy to navigate, and a benchmark for modern
+                urban planning in India.
+            </p>
+            <img src="./images/sector.jpg" alt="Sector-based City Design">
+        </div>
+
+        <div class="card">
+            <h3>Capitol Complex – UNESCO World Heritage Site</h3>
+            <p>
+                The Capitol Complex is the administrative heart of Chandigarh and a masterpiece of modern
+                architecture designed by Le Corbusier. It houses the Secretariat, Legislative Assembly,
+                and High Court, each reflecting bold brutalist architecture with geometric forms and open
+                spaces. The complex also features symbolic elements such as the Open Hand Monument.
+                In 2016, UNESCO declared the Capitol Complex a World Heritage Site, recognizing its
+                global architectural and historical significance.
+            </p>
+            <img src="./images/Capitol Complex Chandigarh.jpg" alt="Capitol Complex Chandigarh">
+        </div>
+
+        <div class="card">
+            <h3>Open Hand Monument</h3>
+            <p>
+                The Open Hand Monument is one of the most iconic symbols of Chandigarh. Designed by
+                Le Corbusier, it represents peace, unity, and the philosophy of “giving and receiving.”
+                The giant open hand structure rotates with the wind, symbolizing openness and harmony.
+                It reflects the democratic and progressive spirit of the city and stands as a powerful
+                emblem of Chandigarh’s modern identity.
+            </p>
+            <img src="./images/open hand.jpg" alt="Open Hand Monument">
+        </div>
+
+        <div class="card">
+            <h3>Green Belts & Wide Roads</h3>
+            <p>
+                Chandigarh is widely admired for its wide, straight roads and extensive green belts,
+                which are central to its urban planning. Roads are carefully categorized to separate
+                fast-moving traffic from local streets, improving safety and efficiency. Green belts,
+                parks, and tree-lined avenues run between sectors and along roads, providing clean air,
+                reducing noise pollution, and enhancing the city’s beauty. Together, these features make
+                Chandigarh one of India’s cleanest, greenest, and most livable cities.
+            </p>
+            <img src="./images/wideroad.png" alt="Green Belts and Wide Roads">
+        </div>
+
+    </div>
+
+</body>
+</html>

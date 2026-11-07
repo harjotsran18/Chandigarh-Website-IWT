@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Chandigarh</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: #fff;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #16a085;
+            margin-bottom: 15px;
+            border-left: 5px solid #1abc9c;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        /* Multiple images in a card */
+        .card-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Responsive text */
+        @media(max-width:768px){
+            h1 {
+                font-size: 2.2rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Places to Visit in Chandigarh</h1>
+
+    <div class="content">
+
+        <div class="card">
+            <h3>Gardens – Rock Garden, Rose Garden & Bougainvillea Garden</h3>
+            <p>
+                Chandigarh is known as the “City Beautiful,” and its gardens are a major highlight of the
+                city’s urban planning. The Rock Garden, created by Nek Chand, is a unique attraction made
+                entirely from recycled materials such as broken ceramics and scrap. The Zakir Hussain Rose
+                Garden is the largest rose garden in Asia, featuring over 1,600 varieties of roses.
+                Bougainvillea Garden is famous for its vibrant flowers and peaceful environment, making it
+                ideal for relaxation and nature walks.
+            </p>
+            <div class="card-images">
+                <img src="./images/rockgarden.jpg" alt="Rock Garden Chandigarh">
+                <img src="./images/rose garden.jpeg" alt="Rose Garden Chandigarh">
+                <img src="./images/bougainvillea.jpg" alt="Bougainvillea Garden">
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Sukhna Lake</h3>
+            <p>
+                Sukhna Lake is one of Chandigarh’s most picturesque landmarks. Created in 1958 at the
+                foothills of the Shivalik Hills, it is a man-made reservoir that offers scenic views and
+                recreational activities such as boating, jogging, and bird watching. The lake is especially
+                popular during sunrise and sunset and plays an important role in maintaining the city’s
+                ecological balance.
+            </p>
+            <img src="./images/Sukhna-Lake.jpg" alt="Sukhna Lake">
+        </div>
+
+        <div class="card">
+            <h3>Government Museum & Art Gallery</h3>
+            <p>
+                The Government Museum and Art Gallery in Chandigarh is a major cultural institution showcasing
+                India’s rich artistic and historical heritage. It houses Gandharan sculptures, miniature
+                paintings, modern Indian art, and archaeological artifacts. The museum also serves as an
+                educational center for students, researchers, and art lovers.
+            </p>
+            <img src="./images/The-Government-Museum-and-Art-Gallery-Chandigarh-5.jpg" alt="Government Museum Chandigarh">
+        </div>
+
+        <div class="card">
+            <h3>Religious Places – ISKCON Temple & Gurudwara Nada Sahib</h3>
+            <p>
+                Chandigarh reflects cultural harmony through its important religious sites. The ISKCON
+                Temple, dedicated to Lord Krishna, offers a peaceful spiritual atmosphere with devotional
+                activities and festivals. Gurudwara Nada Sahib, associated with Guru Gobind Singh, is a
+                revered Sikh pilgrimage site known for its calm environment and community service through
+                langar.
+            </p>
+            <div class="card-images">
+                <img src="./images/temple.jpeg" alt="ISKCON Temple Chandigarh">
+                <img src="./images/nada sahib.jpeg" alt="Gurudwara Nada Sahib">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

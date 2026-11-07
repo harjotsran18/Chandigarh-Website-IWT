@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Cuisine in Chandigarh</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #f3f7f9, #e0e8ed);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 35px 20px;
+            background: linear-gradient(135deg, #ff6b6b, #f06595);
+            color: #fff;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #f06595;
+            margin-bottom: 15px;
+            border-left: 5px solid #ff6b6b;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        /* Responsive text */
+        @media(max-width:768px){
+            h1 {
+                font-size: 2.2rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Food & Cuisine in Chandigarh</h1>
+
+    <div class="content">
+
+        <div class="card">
+            <h3>Famous Punjabi Food</h3>
+            <p>
+                Chandigarh, the “City Beautiful,” is known for its rich and flavorful Punjabi cuisine. Iconic dishes such as
+                Butter Chicken, Dal Makhani, Paneer Tikka, and Tandoori Chicken are widely loved. Winter specialties like
+                Sarson da Saag with Makki di Roti showcase the rustic charm of Punjabi culture, and street food favorites
+                include Amritsari Kulcha and Chole Bhature. No Punjabi meal is complete without a glass of Lassi.
+            </p>
+            <img src="./images/chole-bhature-punjab.jpg" alt="Punjabi Food">
+        </div>
+
+        <div class="card">
+            <h3>Popular Street Food (Sector 17 & 34)</h3>
+            <p>
+                Chandigarh is a paradise for street food lovers. Sector 17 and Sector 34 are bustling with food stalls
+                offering Chaat, Aloo Tikki, Golgappas, Pav Bhaji, Momos, Parathas, and Kulchas. The lively atmosphere
+                and delicious flavors make street food an essential part of the city’s culture.
+            </p>
+            <img src="./images/food.jpg" alt="Street Food Chandigarh">
+        </div>
+
+        <div class="card">
+            <h3>Famous Restaurants & Cafés</h3>
+            <p>
+                Chandigarh offers a wide variety of restaurants and cafés catering to every taste. Popular spots like
+                Black Lotus, Indian Coffee House, and cafes in Sector 26 and Sector 17 are known for food and ambiance.
+                From authentic Punjabi meals to continental and fusion cuisines, the city offers a vibrant dining experience.
+            </p>
+            <img src="./images/casa bella vista.jpeg" alt="Restaurants and Cafes">
+        </div>
+
+        <div class="card">
+            <h3>Local Sweets</h3>
+            <p>
+                Chandigarh is famous for its Punjabi sweets. Popular treats include Gulab Jamun, Jalebi, Barfi, Rasgulla,
+                Rabri, and Pinni. Local sweet shops in Sector 17, Sector 22, and Sector 34 are well-known for their
+                authentic taste, making them a must-visit for anyone with a sweet tooth.
+            </p>
+            <img src="./images/Gopal-Sweets-A-Flavorful-Fusion.jpg" alt="Punjabi Sweets">
+        </div>
+
+    </div>
+
+</body>
+</html>

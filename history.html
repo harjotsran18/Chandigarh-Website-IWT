@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Chandigarh</title>
+
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #fff;
+            letter-spacing: 4px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px 50px;
+        }
+
+        /* Card styling with 3D hover effects */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 50px;
+            padding: 30px 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform-style: preserve-3d;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03) rotateX(1deg);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            color: #2c3e50;
+            border-left: 6px solid #1abc9c;
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* Image styling with hover zoom */
+        img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        /* Fade-in animation for cards */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Staggered animation delays */
+        .card:nth-child(1) { animation-delay: 0.2s; }
+        .card:nth-child(2) { animation-delay: 0.4s; }
+        .card:nth-child(3) { animation-delay: 0.6s; }
+
+        /* Responsive adjustments */
+        @media(max-width: 768px){
+            h1 {
+                font-size: 2.5rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+            .card {
+                padding: 25px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>HISTORY OF CHANDIGARH</h1>
+
+    <div class="content">
+
+        <div class="card">
+            <h3>Formation After Independence</h3>
+            <p>
+                After India gained independence in 1947, the state of Punjab lost its historic capital,
+                Lahore, which became part of Pakistan during the Partition. To fulfill the need for a new
+                capital, the Government of India decided to build a completely new city. Chandigarh was
+                selected due to its strategic location near the Shivalik Hills and availability of land.
+                Construction began in the early 1950s, and the city was officially inaugurated in 1953.
+                Later, in 1966, Chandigarh was declared a Union Territory and made the shared capital of
+                Punjab and Haryana.
+            </p>
+            <img src="./images/history.jpg" alt="Formation of Chandigarh">
+        </div>
+
+        <div class="card">
+            <h3>Role of Le Corbusier</h3>
+            <p>
+                Le Corbusier played a crucial role in shaping Chandigarh as a modern planned city. Appointed
+                as the chief architect in the early 1950s, he designed the city using a systematic sector-based
+                layout. His vision emphasized wide roads, green spaces, and a clear separation of residential,
+                commercial, and administrative areas. He also designed iconic structures such as the Capitol
+                Complex, which includes the High Court, Secretariat, and Legislative Assembly.
+            </p>
+            <img src="./images/le corb.webp" alt="Le Corbusier Chandigarh">
+        </div>
+
+        <div class="card">
+            <h3>Development Phases of Chandigarh</h3>
+            <p>
+                Chandigarh’s development took place in well-planned phases. The first phase focused on core
+                government buildings and initial residential sectors. The second phase expanded housing,
+                educational institutions, and markets. The third phase concentrated on further urban growth,
+                industrial development, and enhanced civic amenities. Throughout its development, Chandigarh
+                preserved its structured layout, green belts, and high living standards.
+            </p>
+            <img src="./images/development.jpg" alt="Development Phases of Chandigarh">
+        </div>
+
+    </div>
+
+</body>
+</html>
